@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+@import "./mixin.scss";
+
+html {
+    overflow-x: hidden;
+}
+
+* {
+    margin     : 0;
+    padding    : 0;
+    box-sizing : border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.content {
+    height  : 100%;
+    display : flex;
+    overflow: auto;
+
+    .content-left {
+        width           : 150px;
+        background-color: #191718;
+
+        @include respond(phone) {
+            display: none;
+        }
+
+        @include respond(tablet-min) {
+            display: none;
+        }
+
+        ul li {
+            padding      : 10px;
+            border-bottom: 1px solid #838282;
+            padding-left : 10px;
+            color        : #AAAAAA;
+            font-size    : 16px;
+            font-weight  : 700;
+            align-items  : center;
+
+            &.active {
+                background: #5C5C5C;
+                color     : #FFFFFF;
+            }
+        }
+    }
+
+    .content-right {
+        flex          : 1;
+        display       : flex;
+        flex-direction: column;
+        align-items   : center;
+        margin        : 0 130px;
+
+        @include respond(phone) {
+            width : 100%;
+            margin: 0;
+        }
+
+        @include respond(tablet-min) {
+            width : 100%;
+            margin: 0;
+        }
+
+        @include respond(laptop) {
+            width : 100%;
+            margin: 0;
+        }
+
+        .menu-logo {
+            @include respond(phone) {
+                width         : 100%;
+                display       : flex;
+                flex-direction: row;
+                align-items   : center;
+            }
+
+            .menu {
+                display: none;
+
+                @include respond(tablet-min) {
+                    padding-left: 10px;
+                }
+            }
+        }
+
+        .content-right-logo {
+            background-image : url(../public/logoNCC.png);
+            width            : 310px;
+            height           : 122px;
+            background-size  : contain;
+            margin           : 20px 0;
+            background-repeat: no-repeat;
+
+            @include respond(phone) {
+                transform: scale(0.4);
+                margin   : 0 auto;
+            }
+
+            @include respond(tablet-min) {
+                transform: scale(0.5);
+                margin   : 0 auto;
+            }
+
+            @include respond(laptop) {
+                transform: scale(0.8);
+                margin   : 0 auto;
+            }
+        }
+
+        .content-right-container {
+            background-color: #EFEFEF;
+            height          : 210px;
+            padding         : 0 100px;
+            display         : flex;
+            flex-direction  : column;
+            align-items     : center;
+
+            @include respond(phone) {
+                margin : 0 5px;
+                height : auto;
+                padding: 10px;
+            }
+
+            @include respond(tablet-min) {
+                margin : 0 5px;
+                height : auto;
+                padding: 10px;
+            }
+
+            @include respond(laptop) {
+                margin : 0 5px;
+                height : auto;
+                padding: 10px;
+            }
+
+            :nth-child(1) {
+                font-size  : 18px;
+                font-weight: 700;
+                margin-top : 38px;
+
+                @include respond(phone) {
+                    margin-top: 10px;
+                }
+
+                @include respond(tablet-min) {
+                    margin-top: 10px;
+                }
+
+                @include respond(laptop) {
+                    margin-top: 10px;
+                }
+            }
+
+            :nth-child(2) {
+                font-size : 16px;
+                margin-top: 18px;
+            }
+        }
+
+        .content-right-content {
+            display      : flex;
+            margin-top   : 40px;
+            margin-bottom: 10px;
+
+            @include respond(phone) {
+                flex-wrap : wrap;
+                margin-top: 10px;
+            }
+
+            @include respond(tablet-min) {
+                flex-wrap : wrap;
+                margin-top: 10px;
+            }
+
+            @include respond(laptop) {
+                flex-wrap : wrap;
+                margin-top: 10px;
+            }
+
+            .content-right-child {
+                width: 33.33%;
+                float: left;
+
+                @include respond(phone) {
+                    width : 100%;
+                    margin: 10px 5px;
+                }
+
+                @include respond(tablet-min) {
+                    width : 100%;
+                    margin: 10px 5px;
+                }
+
+                @include respond(laptop) {
+                    width : 100%;
+                    margin: 10px 5px;
+                }
+
+                .child-title {
+                    margin-bottom: 18px;
+                    font-size    : 18px;
+                    font-weight  : 700;
+
+                }
+
+                .child-content {
+
+                    padding: 0 10px;
+
+                    img {
+                        float : left;
+                        width : 100px;
+                        height: 100px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.footer {
+    text-align      : center;
+    padding-top     : 10px;
+    background-color: #64b9e5;
+    padding         : 15px;
+
+    p {
+        margin-bottom: 0;
+    }
+
+    a {
+        text-decoration: none;
+    }
+}

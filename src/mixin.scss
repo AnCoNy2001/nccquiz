@@ -1,0 +1,33 @@
+@mixin respond ($breackpoint) {
+    @if $breackpoint==phone {
+        @media (max-width: 480px) {
+            @content
+        }
+
+        ;
+    }
+
+    @if $breackpoint==tablet-min {
+        @media (max-width: 768px) {
+            @content
+        }
+
+        ;
+    }
+
+    @if $breackpoint==laptop {
+        @media (max-width: 1023px) {
+            @content
+        }
+
+        ;
+    }
+
+    @if $breackpoint==PC {
+        @media (min-width: 1024px) {
+            @content
+        }
+
+        ;
+    }
+}
