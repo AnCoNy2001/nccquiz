@@ -18,7 +18,9 @@ function App() {
         </div>
         <div className="content-right">
           <div className="menu-logo">
-            <div className="menu"><i class="fas fa-bars"></i></div>
+            <div className="menu">
+              <i class="fas fa-bars"></i>
+            </div>
             <div className="content-right-logo"></div>
           </div>
           <div className="content-right-container">
@@ -42,11 +44,11 @@ function App() {
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                   Autem dolorem eveniet qui odit sapiente, reprehenderit velit
                   odio repellat nulla molestias voluptatibus hic eum est,
-                  voluptates neque? Cumque fugit explicabo neque?
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Autem dolorem eveniet qui odit sapiente, reprehenderit velit
-                  odio repellat nulla molestias voluptatibus hic eum est,
-                  voluptates neque? Cumque fugit explicabo neque?
+                  voluptates neque? Cumque fugit explicabo neque? Lorem ipsum,
+                  dolor sit amet consectetur adipisicing elit. Autem dolorem
+                  eveniet qui odit sapiente, reprehenderit velit odio repellat
+                  nulla molestias voluptatibus hic eum est, voluptates neque?
+                  Cumque fugit explicabo neque?
                 </p>
               </div>
             </div>
@@ -58,11 +60,11 @@ function App() {
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                   Autem dolorem eveniet qui odit sapiente, reprehenderit velit
                   odio repellat nulla molestias voluptatibus hic eum est,
-                  voluptates neque? Cumque fugit explicabo neque?
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Autem dolorem eveniet qui odit sapiente, reprehenderit velit
-                  odio repellat nulla molestias voluptatibus hic eum est,
-                  voluptates neque? Cumque fugit explicabo neque?
+                  voluptates neque? Cumque fugit explicabo neque? Lorem ipsum,
+                  dolor sit amet consectetur adipisicing elit. Autem dolorem
+                  eveniet qui odit sapiente, reprehenderit velit odio repellat
+                  nulla molestias voluptatibus hic eum est, voluptates neque?
+                  Cumque fugit explicabo neque?
                 </p>
               </div>
             </div>
@@ -74,21 +76,19 @@ function App() {
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                   Autem dolorem eveniet qui odit sapiente, reprehenderit velit
                   odio repellat nulla molestias voluptatibus hic eum est,
-                  voluptates neque? Cumque fugit explicabo neque?
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Autem dolorem eveniet qui odit sapiente, reprehenderit velit
-                  odio repellat nulla molestias voluptatibus hic eum est,
-                  voluptates neque? Cumque fugit explicabo neque?
+                  voluptates neque? Cumque fugit explicabo neque? Lorem ipsum,
+                  dolor sit amet consectetur adipisicing elit. Autem dolorem
+                  eveniet qui odit sapiente, reprehenderit velit odio repellat
+                  nulla molestias voluptatibus hic eum est, voluptates neque?
+                  Cumque fugit explicabo neque?
                 </p>
               </div>
             </div>
-
           </div>
         </div>
       </div>
-      <div className='footer'>
-        <p>&copy; 2023 Bùi Hoàng Ân.
-        </p>
+      <div className="footer">
+        <p>&copy; 2023 Bùi Hoàng Ân.</p>
       </div>
     </div>
   );
